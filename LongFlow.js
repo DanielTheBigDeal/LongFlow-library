@@ -30,3 +30,20 @@ function cutLink(id) {
   $link.textContent = $link.href.replace('https://', ''); // here we replace https:// with an empty space;
   return $link;
 }
+
+//function to show and hide an element. 
+//Before using the function:
+//1 Connect bootstrap library to work with its classes
+//2 Create an element like: 
+//const list = document.getElementById('list');
+//3 Use the functions:
+// show(list);
+function show(elem) {
+  elem.classList.remove('d-none');
+  elem.classList.add('d-flex');
+}
+
+//a function to hide an element. Choose the element by id and connect bootstrap library to work with its classes
+function hide(elem) {
+  elem.classList.add('d-none');
+}
